@@ -1,101 +1,146 @@
 <template>
-  <div>
-    <div class="flex items-center">
-      <div class="flex-2 px-10">
-        <h1 class="text-3xl text-red-600 font-extrabold">Demo<span class="text-black">Logo</span></h1>
+  <div class="shadow">
+
+    <div class="flex items-center justify-between py-6 px-6 bg-gray-50">
+      <div>
+        <h3 class="text-black/80 text-lg font-bold">Contact</h3>
       </div>
+      <div class="flex gap-2 items-center">
+        <button class="border px-4 py-1 bg-blue-600 text-white rounded">
+          New Contact
+        </button>
+        <button class="flex items-center gap-2 border px-4 py-1 rounded text-black/70">
+          <PhFunnelSimple 
+            size="15"
+          />
+          Filter
+        </button>
+      </div>
+    </div>
 
-
-      <div class="flex-1">
-        <div class="flex justify-between px-[80px] py-2">
-          <div class="flex gap-4">
-            <p class="flex items-center gap-1 font-medium text-sm ">
-              <i class="text-red-600 text-xl ph ph-map-pin-line"></i>
-              380 St Kilda Road Melbourne, Australia
-            </p>
-            <p class="flex items-center gap-1 font-medium text-sm ">
-              <i class="text-red-600 text-xl ph ph-envelope-simple"></i>
-              380 St Kilda Road Melbourne, Australia
-            </p>
+    <table class="w-full">
+      <tr>
+        <th class="border-b py-4 px-4 text-left text-gray-500 text-sm font-medium">
+          <div class="flex items-center gap-2 justify-center ">
+            <span>Name</span>  
+            <PhArrowUp 
+              size="12"
+              weight="regular"
+            />
           </div>
-
-          <div class="flex gap-2">
-            <a href="#">
-              <i class="text-red-600 text-sm font-bold ph ph-twitter-logo"></i>
-            </a>
-            <a href="#">
-              <i class="text-red-600 text-sm font-bold ph ph-facebook-logo"></i>
-            </a>
-            <a href="#">
-              <i class="text-red-600 text-sm font-bold ph ph-pinterest-logo"></i>
-            </a>
-            <a href="#">
-              <i class="text-red-600 text-sm font-bold ph ph-instagram-logo"></i>
-            </a>
-          </div>
-        </div>
-
-
-
-        <div class="clip-path bg-red-700 py-4 px-[80px] flex justify-between items-center">
-          <div class="flex gap-4">
-            <a 
-              href="#" 
-              class="text-white hover:text-black duration-300"
-            >
-              Home
-            </a>
-            <a 
-              href="#" 
-              class="text-white hover:text-black duration-300"
-            >
-              About
-            </a>
-            <a 
-              href="#" 
-              class="text-white hover:text-black duration-300"
-            >
-              Services
-            </a>
-            <a 
-              href="#" 
-              class="text-white hover:text-black duration-300"
-            >
-              Blog
-            </a>
-            <a 
-              href="#" 
-              class="text-white hover:text-black duration-300"
-            >
-              Contact
-            </a>
-          </div>
-
+        </th>
+        <th class="border-b py-4 px-4 text-left text-gray-500 text-sm font-medium">
           <div class="flex items-center gap-2">
-            <span>
-              <i class="text-3xl text-white ph ph-phone-call"></i>
-            </span>
-            <div>
-              <h5 class="text-sm text-white mb-1">Call anytime</h5>
-              <h3 class="text-white font-medium">98 (000) - 9630</h3>
-            </div>
+            <span>Email</span>  
+            <PhArrowUp 
+              size="12"
+              weight="regular"
+            />
           </div>
-        </div>
+        </th>
+        <th class="border-b py-4 px-4 text-left text-gray-500 text-sm font-medium">
+          <div class="flex items-center gap-2">
+            <span>Phone Number</span>  
+            <PhArrowUp 
+              size="12"
+              weight="regular"
+            />
+          </div>
+        </th>
+        <th class="border-b py-4 px-4 text-left text-gray-500 text-sm font-medium">
+          <div class="flex items-center gap-2">
+            <span>Tag</span>  
+            <PhArrowUp 
+              size="12"
+              weight="regular"
+            />
+          </div>
+        </th>
+      </tr>
+      <tr class="bg-gray-100">
+        <td class="py-3 px-5 text-left text-black/60  text-sm font-medium flex items-center gap-6">
+          <input 
+            type="checkBox"
+            class="w-4 h-4"
+          >
+          <img 
+            src="https://images.unsplash.com/photo-1615109398623-88346a601842?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&w=387&q=80" 
+            alt=""
+            class="w-10 aspect-square object-cover rounded-full"
+          >
+          Mahsin Ullah Azmi
+        </td>
+        <td class="py-3 px-5 text-left text-black/60  text-sm font-medium">info@gmail.com</td>
+        <td class="py-3 px-5 text-left text-black/60  text-sm font-medium">016 03283 901</td>
+        <td class="py-3 px-5 text-left text-black/60  text-sm font-medium flex justify-between items-center">
+          Developer
+          <PhDotsThree 
+            size="20"
+            class="text-black/60"
+            weight="bold"
+          />
+        </td>
+      </tr>
+      <tr class="bg-gray-50">
+        <td class="py-3 px-5 text-left text-black/60  text-sm font-medium flex items-center gap-6">
+          <input 
+            type="checkBox"
+            class="w-4 h-4"
+          >
+          <img 
+            src="https://images.unsplash.com/photo-1615109398623-88346a601842?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&w=387&q=80" 
+            alt=""
+            class="w-10 aspect-square object-cover rounded-full"
+          >
+          Mahsin Ullah Azmi
+        </td>
+        <td class="py-3 px-5 text-left text-black/60  text-sm font-medium">info@gmail.com</td>
+        <td class="py-3 px-5 text-left text-black/60  text-sm font-medium">016 03283 901</td>
+        <td class="py-3 px-5 text-left text-black/60  text-sm font-medium flex justify-between items-center">
+          Developer
+          <PhDotsThree 
+            size="20"
+            class="text-black/60"
+            weight="bold"
+          />
+        </td>
+      </tr>
+    </table>
+    <div class="flex justify-center">
+      <div class="bg-white py-4 px-6 flex items-center gap-4 text-sm font-medium">
+        <button class="bg-gray-300 p-1.5 rounded">
+          <PhCaretLeft 
+              size="18"
+              class="text-black/50"
+              weight="bold"
+          />
+        </button>
+        <button>
+          1
+        </button>
+        <button class="text-gray-400">
+          2
+        </button>
+        <button class="text-gray-400">
+          ....
+        </button>
+        <button class="text-gray-400">
+          8
+        </button>
+        <button class="bg-gray-300 p-1.5 rounded">
+          <PhCaretRight 
+              size="18"
+              class="text-black/50"
+              weight="bold"
+          />
+        </button>
       </div>
     </div>
   </div>
 
-  <div>
-    <img 
-          src="https://images.unsplash.com/photo-1691812778844-b6849ac08222?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&w=2070&q=80"
-          alt=""
-          class="w-full h-screen object-cover"  
-        >
-  </div>
+
 </template>
 
-<style scoped>
-  .clip-path{
-    clip-path: polygon(3% 0, 100% 0, 100% 99%, 0% 100%);
-  }
-</style>
+<script setup>
+  import { PhDotsThree,PhArrowUp, PhCaretLeft,PhCaretRight, PhFunnelSimple } from "@phosphor-icons/vue";
+</script>
