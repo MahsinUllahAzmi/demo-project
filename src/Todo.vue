@@ -22,7 +22,7 @@ const inputString = ref('')
 let ToDo = ref([])
 
 const addItem = () => {
-  ToDo.value.push({
+    ToDo.value.push({
     id: ToDo.value.length + 1,
     title: inputString.value,
     status: false,
